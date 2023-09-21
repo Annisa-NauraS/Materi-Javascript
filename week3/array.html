@@ -1,0 +1,38 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Tipe Data Array</h1>
+    <h1 id="sitak"></h1>
+    <h1 id="index"></h1>
+
+    <script>
+        // Array sifat dinamis, artinya datanya berubah kalau input manual
+        let a = ["N", 20, 21.2, true, null];
+        document.getElementById("sitak").innerHTML = a;
+
+        // Operasi Array
+        // Temukan index di Array -> Variable[Index];
+        // document.getElementById("index").innerHTML = a[3];
+
+        // Hitung Berapa Index -> variable.length;
+        // document.getElementById("index").innerHTML = a.length;
+
+        // Tamabah Data ke Array -> variable.push(data);
+        // document.getElementById("index").innerHTML = a.push(80, "Hi", true);
+        // document.getElementById("index").innerHTML = a;
+
+        // Mengubah data di posisi index -> variable[index] = data;
+        // document.getElementById("index").innerHTML = a[0] = "Naura";
+        // document.getElementById("index").innerHTML = a;
+
+        // Hapus data di posisi index namun bukan index -> delete variable[index];
+        document.getElementById("index").innerHTML = delete a[0];
+        document.getElementById("index").innerHTML = a;
+    </script>
+</body>
+</html>

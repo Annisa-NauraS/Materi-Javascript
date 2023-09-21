@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="inop"></h1>
+    <script>
+                // In Operator
+        // Cek jika property berada di data objek atau index di array
+        // let permen = {
+        //     nama: "Milkita",
+        //     kandungan: "Susu"
+        // }
+        // // "property" in variable
+        // document.getElementById.innerHTML = "nama" in permen;
+
+        // Mencari di null/undefined - masih true karena yg dicek hanya property/index
+        // let kota = {
+        //     depan: "Bo",
+        //     tengah: undefined,
+        //     Belakang: "gor"
+        // }
+        // document.getElementById("inop").innerHTML = "tengah" in kota;
+
+        // Array - index in variable
+        const bunga = ["mawar", "melati", null, undefined];
+        document.getElementById("inop").innerHTML = 2 in bunga;
+    </script>
+</body>
+</html>

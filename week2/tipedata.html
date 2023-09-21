@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data HTML</title>
+</head>
+<body>
+    <h1>Tipe Data HTML</h1>
+
+
+    <h2 id="nomor"></h2>
+    <h2 id="text"></h2>
+    <h2 id="boolean"></h2>
+    <h2 id="data"></h2>
+
+    <script>
+
+//     String = Teks
+//     Number = Nomor
+//     Boolean = True or False
+//     Array = Banyak Data
+
+        // Tidak bisa dimulai dengan 0 (bilangan oktal)
+
+        // To use "" for a text with " use slice \
+        // escape character <
+        // \' 
+        // \" 
+        // \n (new line)
+        // \t (tab)
+        // \b (box)
+        // \u00AE (icon etc)>
+
+        var dataNumber = 20;
+        console.log(dataNumber);
+        document.getElementById("nomor").innerHTML = dataNumber;
+
+        // length
+        // toUpperCase()
+        // toLowerCase()
+        // repeat(n)
+        // slice(n)
+        // replace(a,b)
+
+        var dataString = "Naura";
+        console.log(dataString.replace("a,u"));
+        document.getElementById("text").innerHTML = dataString.replace("a,u");
+
+        var dataBoolean = true;
+        console.log(dataBoolean);
+        document.getElementById("boolean").innerHTML = dataBoolean;
+
+        var dataArray = [2,3,4,2];
+        console.log(dataArray);
+        document.getElementById("data").innerHTML = dataArray;
+
+    </script>
+</body>
+</html>

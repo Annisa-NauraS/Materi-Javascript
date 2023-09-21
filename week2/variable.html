@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Javascript</title>
+</head>
+<body>
+    <h1>Variable Lokal & Public</h1>
+
+    <!-- Variable adalah sebuah nama yang mewakili sebuah nilai.
+    Variable bisa di-isi dengan berbagai macam nilai, seperti string, number, objek, arrak dan sebagainya  
+    Variable Lokal harus di dalam kurungW-->
+
+    <h2>A.Variabel Lokal</h2>
+    <p id="lokal"></p>
+
+    <h2>B.Variabel Publik</h2>
+    <p id="publik"></p>
+
+    <script>
+
+        variableLokal();
+        variablePublik();
+
+        function variableLokal(){
+            var kata = "Ini adalah variable lokal";
+
+            console.log(kata);
+            document.getElementById("lokal").innerHTML = kata;
+        }
+
+        function variablePublik(){
+             kalimat = "Ini adalah variable publik";
+        }
+            console.log(kalimat);
+            document.getElementById("publik").innerHTML = kalimat;
+    </script>
+
+</body>
+</html>

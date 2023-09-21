@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN</title>
+</head>
+<body>
+    <h1>Belajar NaN (Not a Number)</h1>
+    <!-- NaN -->
+    <h1 id="nan1"></h1>
+    <h1 id="nan2"></h1>
+    <h1 id="nan3"></h1>
+
+    <!-- isNan -->
+    <h1 id="isnan"></h1>
+
+
+    <script>
+        // NaN
+        let a = Number("Eaaa");
+        let b = Number("30");
+
+        document.getElementById("nan1").innerHTML = a;
+        document.getElementById("nan2").innerHTML = b;
+
+        // null?
+        let c = null;
+        document.getElementById("nan3").innerHTML = c;
+
+        // isNaN
+        let e = Number("Eaaa");
+        document.getElementById("isnan").innerHTML = isNaN(e);
+    </script>
+</body>
+</html>
